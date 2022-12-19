@@ -1,0 +1,36 @@
+nav {
+    display: flex;
+    min-height: 10vh;
+    justify-content: space-around;
+    align-items: center;
+
+    button {
+        border: none;
+        background-color: transparent;
+        border: 2px solid rgb(65, 65, 65);
+        padding: .5rem;
+        cursor: pointer;
+        transition: all .3s ease;
+
+        &:hover {
+            background-color: rgb(65, 65, 65);
+            color: white;
+        }
+
+        svg {
+            margin-left: .2rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+    justify-content: space-between;
+    padding: 0 1rem;
+
+        button {
+            z-index: 10;
+            background: linear-gradient(to right);
+        }
+    }
+}
